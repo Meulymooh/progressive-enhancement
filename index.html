@@ -9,11 +9,15 @@ body {
    background-size: cover;
 }
 
+header {
+background-color: yellow;
+}
+
 p {
    font-family: "Times New Roman", Times, serif;
    letter-spacing: 2px;
    font-size: 20px;
-   color:   #800000;
+   color: #800000;
 }
 
 a:link {
@@ -31,6 +35,10 @@ a:hover {
 a:active {
   color: blue;
 } 
+
+q {
+   font-style: italic;
+}
 
 blockquote {
    max-width: 50%;
@@ -55,10 +63,55 @@ q.farmer {
    border-left: solid yellow;
 }
 
+a.good {
+   text-transform: capitalize;
+   font-color: green;
+}
+
+a.bad {
+   text-transform: capitalize;
+   font-color: red;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2}
+
+li.one {
+   background: url(https://raw.githubusercontent.com/becodeorg/GNT-Yu-1.10/master/01-The-fields/04-html-css/01-html-css-basics/images/bien.png?token=AtkdK8DZHGxQMQRbv5k1gqJr3w9Uem5nks5cgpREwA%3D%3D);
+   background-repeat: no-repeat;
+   padding-left: 60px;
+   line-height: 50px;
+}
+
+li.two {
+   background: url(https://raw.githubusercontent.com/becodeorg/GNT-Yu-1.10/master/01-The-fields/04-html-css/01-html-css-basics/images/mal.png?token=AtkdKwLqucLCLjCaGH8zV0pE_F1x6Ke8ks5cgpYawA%3D%3D);
+   background-repeat: no-repeat;
+   padding-left: 65px;
+   line-height: 50px;
+}
+
+li.three {
+   background: url(https://raw.githubusercontent.com/becodeorg/GNT-Yu-1.10/master/01-The-fields/04-html-css/01-html-css-basics/images/chat.png?token=AtkdKzH716ctmQZYmlLhrH5_eVoDvGHPks5cgpZTwA%3D%3D);
+   background-repeat: no-repeat;
+   padding-left: 60px;
+   line-height: 50px;
+}
+
+p.one {
+   font-weight: bold;
+}
+
+figure {
+   float: right;
+   left: 50%;
+   margin: 20px;
+}
+
 </style>
 
 
+
 <!DOCTYPE html>
+
 
 <body>
 <title>The Story of the Chinese Farmer</title>
@@ -72,20 +125,19 @@ q.farmer {
 
 <h2>Preamble</h2>
 <ul>
-<li>read this once</li>
-<li>then read it again</li>
-<li>then tell it to your best friend</li>
+<li class="one">read this once</li>
+<li class="two">then read it again</li>
+<li class="three">then tell it to your best friend</li>
 </ul>
 
 <h2>The story</h2>
 
-<p>Once upon a time there was a Chinese farmer whose horse ran away. That evening, all of his neighbors came around to commiserate. They said, <q class="villagers">We are so sorry to hear your horse has run away. This is most unfortunate.</q> The farmer said, <q class="farmer"><strong>Maybe.</strong></q> The next day the horse came back bringing seven wild horses with it, and in the evening everybody came back and said, <q class="villagers">Oh, isn't that lucky. What a great turn of events. You now have eight horses!</q> The farmer again said, <q class="farmer"><strong>Maybe.</strong></q></p> 
+<p class="one">Once upon a time there was a Chinese farmer whose horse ran away. That evening, all of his neighbors came around to commiserate. They said, <q class="villagers">We are so sorry to hear your horse has run away. This is most unfortunate.</q> The farmer said, <q class="farmer"><strong>Maybe.</strong></q> The next day the horse came back bringing seven wild horses with it, and in the evening everybody came back and said, <q class="villagers">Oh, isn't that lucky. What a great turn of events. You now have eight horses!</q> The farmer again said, <q class="farmer"><strong>Maybe.</strong></q></p> 
 
 <p>The following day his son tried to break one of the horses, and while riding it, he was thrown and broke his leg. The neighbors then said, <q class="villagers">Oh dear, that's too bad,</q> and the farmer responded, <q class="farmer"><strong>Maybe.</strong></q> The next day the conscription officers came around to conscript people into the army, and they rejected his son because he had a broken leg. Again all the neighbors came around and said, <q class="villagers">Isn't that great!</q> Again, he said, <q class="farmer"><strong>Maybe.</strong></q></p>
 
-<p><blockquote class="quote">The whole process of nature is an integrated process of immense complexity, and it's really impossible to tell whether anything that happens in it is good or bad - because you never know what will be the consequence of the misfortune; or, you never know what will be the consequences of good fortune.</blockquote><br><br>
+<p><blockquote class="quote">The whole process of nature is an integrated process of immense complexity, and it's really impossible to tell whether anything that happens in it is good or bad - because you never know what will be the consequence of the misfortune; or, you never know what will be the consequences of good fortune. Alan Watts</p></blockquote><br><br>
 
-Alan Watts</p>
 </div>
 
 
@@ -120,7 +172,7 @@ Alan Watts</p>
    
    
 <h2>Conclusion</h2> 
-<p><acronym title="What does Good mean?"><a class="good" href="https://www.merriam-webster.com/dictionary/good" target="_blank">Good</a></acronym> and <acronym title="What does Bad mean?"><a class="bad" href="https://www.merriam-webster.com/dictionary/bad" target="_blank">Bad</a></acronym> are just one perspective. Bananas are good for monkeys, but monkeys are not good for bananas. Let's not make a big deal out of it...</p>
+<p><acronym title="What does Good mean?"><a class="good" href="https://www.merriam-webster.com/dictionary/good" target="_blank">good</a></acronym> and <acronym title="What does Bad mean?"><a class="bad" href="https://www.merriam-webster.com/dictionary/bad" target="_blank">bad</a></acronym> are just one perspective. Bananas are good for monkeys, but monkeys are not good for bananas. Let's not make a big deal out of it...</p>
 
 <hr>
 
